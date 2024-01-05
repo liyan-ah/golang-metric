@@ -1,0 +1,3 @@
+{
+  "rust-analyzer.linkedProjects": ["Cargo.toml", "golang-metric-ebpf/Cargo.toml"]
+}
