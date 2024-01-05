@@ -4,6 +4,8 @@
 
 1. Install bpf-linker: `cargo install bpf-linker`
 
+2. Update `vmlinux.rs`: `aya-tool generate task_struct thread_struct > golang-metric-ebpf/src/vmlinux.rs`
+
 ## Build eBPF
 
 ```bash
