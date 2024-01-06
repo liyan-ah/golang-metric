@@ -27,6 +27,7 @@ fn try_golang_metric(ctx: ProbeContext) -> Result<u32, u32> {
         let p_config = proc_config::PROC_CONFIG.get_ptr(&tgid);
         if p_config.is_none() {
             debug!(&ctx, "missed proc config: {}", tgid);
+            return Ok(0);
         }
         let task = bpf_get_current_task() as *const vmlinux::task_struct;
         let fsbase = (*task).thread.fsbase;

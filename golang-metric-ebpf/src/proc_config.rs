@@ -1,5 +1,4 @@
 #![no_std]
-#![no_main]
 
 use golang_metric_common::config;
 
